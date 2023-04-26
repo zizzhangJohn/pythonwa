@@ -6,34 +6,14 @@
             </p>
         </div>
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex items-center">
-            <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                    <a href="https://hipflaskapp.com/">
-                        <img class="h-12" src="../assets/hipflask.png" alt="Hipflask" />
-                    </a>
-                </div>
-                <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                    <a href="http://robin.com.au">
-                        <div class="flex">
-                            <ChatIcon class="h-10"/> <span class="ml-1 mt-1 text-2xl">robin.com.au</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                    <a href="https://www.nowhereman.com.au/">
-                        <img class="h-12" src="../assets/nowhereman.png" alt="Nowhereman Brewing" />
-                    </a>
-                </div>
-                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                    <a href="https://nform.com.au/">
-                        <img class="h-12" src="../assets/nform.png" alt="nForm" />
-                    </a>
-                </div>
-                <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                    <a href="https://spacecubed.com/">
-                        <img class="h-12" src="../assets/spacecubed.png" alt="Spacecubed" />
-                    </a>
-                </div>
+            <div class="flex-auto grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-6">
+
+                <Sponsor sponsor-name="Horizon Digital" sponsor-type="Major Sponsor" sponsor-url="https://horizondigital.au/" :sponsorImageUrl="horizonLogo" />
+
+                <Sponsor sponsor-name="Ben Fitzhardinge" sponsor-type="Hosting Sponsor" sponsor-url="https://benjamin.dog/" :sponsorImageUrl="BenLogo" />
+
+                <Sponsor sponsor-name="Spacecubed" sponsor-type="Venue Sponsor" sponsor-url="https://spacecubed.com/" :sponsorImageUrl="SpacecubedLogo" />
+
             </div>
         </div>
     </section>
@@ -41,10 +21,22 @@
 
 <script>
 import { ChatIcon } from "@heroicons/vue/outline";
-
+import Sponsor from "./Sponsor.vue";
+import HorizonLogo from "../assets/horizon_logo_sig.png";
+import SpacecubedLogo from "../assets/spacecubed.png";
+import BenLogo from "../assets/benjamin_dog.png";
 export default {
     components: {
-        ChatIcon,
+      Sponsor,
+      ChatIcon,
+      HorizonLogo,
     },
+  data() {
+    return {
+      horizonLogo: HorizonLogo,
+      SpacecubedLogo,
+      BenLogo,
+    }
+  }
 };
 </script>    
