@@ -21,6 +21,10 @@ pipenv run uvicorn main:app --reload
 
 ## Deploying
 
+#### Deployment will run automatically on commit to main branch.
+
+### Manual deployment steps
+
 ``` sh
 cd frontend
 npm run build
