@@ -10,7 +10,7 @@
 
                 <Sponsor sponsor-name="Horizon Digital" sponsor-type="Major Sponsor" sponsor-url="https://horizondigital.au/" :sponsorImageUrl="horizonLogo" />
 
-                <Sponsor sponsor-name="Ben Fitzhardinge" sponsor-type="Hosting Sponsor" sponsor-url="https://benjamin.dog/" :sponsorImageUrl="BenLogo" />
+                <Sponsor sponsor-name="Ben Fitzhardinge" sponsor-type="Hosting Sponsor" sponsor-url="http://benjamin.dog/" :sponsorImageUrl="BenLogo" />
 
                 <Sponsor sponsor-name="Spacecubed" sponsor-type="Venue Sponsor" sponsor-url="https://spacecubed.com/" :sponsorImageUrl="SpacecubedLogo" />
 
