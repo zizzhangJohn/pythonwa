@@ -43,7 +43,7 @@ export default {
     }
   },
   methods: {
-    handleSubmit() {
+    async handleSubmit() {
       // this.$emit('submit', this.email)
       const options = {
         method: 'POST',
@@ -51,7 +51,7 @@ export default {
         body: `{"email":"${this.email}"}`
       };
       try {
-        fetch(`${import.meta.env.VITE_SLACK_API_ENDPOINT}`, options);
+        await fetch(`${import.meta.env.VITE_SLACK_API_ENDPOINT}`, options);
         alert("Email sent successfully")
         this.$emit('closeSlackModalEvent');
       } catch (error) {
