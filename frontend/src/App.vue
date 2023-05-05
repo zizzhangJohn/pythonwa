@@ -27,7 +27,8 @@ export default {
     Header,
     Photos,
     Sponsors,
-    Talks
+    Talks,
+    Slack
   }
 };
 </script>
